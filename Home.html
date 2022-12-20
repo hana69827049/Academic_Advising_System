@@ -14,16 +14,22 @@
   <button class="button v194_30">اقتراحات
   التدريب الصيفي</button>
   <button class="button v194_31">وصف المقررات</button>
-  <button class="button v194_32"></button>
-  <button class="button v194_33">
-  </button>
-  <button class="button v194_34"></button>
-  <span class="v194_35">حجز موعد</span>
-  <span class="v194_36">دليلك للحاسب</span>
-  <span class="v194_37">ارسال ايميل</span>
-<!--نهاية الهدير -->
-<div class="name"></div>
 
+  <button class="button v194_33">
+<span>ارسال ايميل </span>
+  </button>
+  <button class="button v194_32"> <span>  حجز موعد </span></button>
+  <button class="button v194_34"> <span>  دليلك للحاسب </span></button>
+<!--نهاية الهدير -->
+
+<section class="scroll-container">
+  <div class="scroll-element js-scroll fade-in-bottom">
+
+<div class="name"></div>
+</div>
+</section>
+<section class="scroll-container">
+  <div class="scroll-element js-scroll fade-in-bottom">
 <button class="button v116_4">"QU Stdiuo" إضافة</button>
 
 <button class=" button v116_5" href="https://www.youtube.com/?gl=SA" >
@@ -34,7 +40,11 @@
 <span class="v120_12">إضافة QU Stdiuo</span>-->
 
 <!-- <div class="name"></div>-->
+</div>
+</section>
 
+<section class="scroll-container">
+  <div class="scroll-element js-scroll fade-in-bottom">
 <div class="v120_18"></div>
 <a class="button v123_35" href="https://drive.google.com/file/d/16hPS4pNfcwXQ9_tO4_K4wvXw6g5qoGCc/view?usp=sharing">
 <span class="v120_23">الخطة الدراسية
@@ -49,6 +59,9 @@ pdf  </span>
 
 <div class="v123_37"></div>
 </div></a>
+</div>
+</section>
+
 
 <!--بداية الفوتر  -->
 <div class="v194_19">
@@ -59,6 +72,7 @@ pdf  </span>
 </div>
 <!--نهاية الفوتر -->
 </div>
+
 
 </body></html>
 
@@ -73,6 +87,31 @@ body {
   border:none;
 
 }
+.scroll-container {
+  height: 5vh;
+  min-height: 250px;
+  padding: 2px 1px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.js-scroll {
+  opacity: 0;
+  transition: opacity 650ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+.scrolled.fade-in {
+  animation: fade-in 1s ease-in-out both;
+}
+
+.scrolled.fade-in-bottom {
+  animation: fade-in-bottom 10s ease-in-out both;
+}
+
 
 .button {
 border: none;
@@ -189,6 +228,17 @@ cursor: pointer;
   opacity: 1;
   text-align: left;
 }
+.v194_31:hover{
+  width: 183px;
+  height: 40px;
+  background: rgba(255,255,255,1);
+  background-image:  no-repeat;
+  border-top-left-radius: 125px;
+  border-top-right-radius: 125px;
+  border-bottom-left-radius: 125px;
+  border-bottom-right-radius: 125px;
+  transition:  .5s;
+}
 .v194_32 {
   width: 457px;
   height: 82px;
@@ -202,7 +252,13 @@ cursor: pointer;
   border-bottom-left-radius: 125px;
   border-bottom-right-radius: 125px;
   overflow: hidden;
+    color: rgba(3,105,161,1);
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 32px;
 }
+
+
 .v194_33 {
   width: 457px;
   height: 82px;
@@ -216,8 +272,12 @@ cursor: pointer;
   border-bottom-left-radius: 125px;
   border-bottom-right-radius: 125px;
   overflow: hidden;
-
+color: rgba(3,105,161,1);
+font-family: Inter;
+font-weight: Regular;
+font-size: 32px;
 }
+
 
 .v194_34 {
   width: 457px;
@@ -232,48 +292,21 @@ cursor: pointer;
   border-bottom-left-radius: 125px;
   border-bottom-right-radius: 125px;
   overflow: hidden;
-}
-.v194_35 {
-  width: 126px;
   color: rgba(3,105,161,1);
-  position: absolute;
-  top: 495px;
-  left: 1125px;
   font-family: Inter;
   font-weight: Regular;
   font-size: 32px;
-  opacity: 1;
-  text-align: left;
+
 }
-.v194_36 {
-  width: 208px;
-  color: rgba(3,105,161,1);
-  position: absolute;
-  top: 593px;
-  left: 1097px;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 32px;
-  opacity: 1;
-  text-align: left;
-}
-.v194_37 {
-  width: 157px;
-  color: rgba(3,105,161,1);
-  position: absolute;
-  top: 401px;
-  left: 1109px;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 32px;
-  opacity: 1;
-  text-align: left;
-}
+
+
+
+
 .v116_4 {
   width: 538px;
   height: 65px;
   background: rgba(3,105,161,1);
-  background: ;
+  color: rgba(249,250,251,1);
   opacity: 1;
   position: absolute;
   top: 1081px;
@@ -288,6 +321,7 @@ cursor: pointer;
 .v116_5 {
   width: 538px;
   height: 65px;
+  color: rgba(249,250,251,1);
   background: rgba(3,105,161,1);
   opacity: 1;
   position: absolute;
@@ -357,7 +391,7 @@ cursor: pointer;
   background: rgba(3,105,161,1);
   opacity: 1;
   position: absolute;
-  top: 1491px;
+  top: 1400px;
   left: 308px;
   overflow: hidden;
 }
@@ -367,7 +401,7 @@ cursor: pointer;
   background: rgba(249,250,251,1);
   opacity: 1;
   position: absolute;
-  top: 1515px;
+  top: 1430px;
   left: 332px;
   overflow: hidden;
 }
@@ -402,7 +436,7 @@ cursor: pointer;
   background: rgba(3,105,161,1);
   opacity: 1;
   position: absolute;
-  top: 1491px;
+  top: 1400px;
   left: 770px;
   overflow: hidden;
 }
@@ -444,9 +478,7 @@ cursor: pointer;
 
 .name {
 width: 600px;
-border-top: 1px solid rgba(3,105,161,1);
-margin-left: auto;
-margin-right: auto;
+border-top: 2px solid rgba(3,105,161,1);
 }
 
 .v194_19 {
@@ -486,3 +518,45 @@ margin-right: auto;
 }
 
 </style>
+<script>
+const scrollElements = document.querySelectorAll(".js-scroll");
+
+const elementInView = (el, dividend = 1) => {
+  const elementTop = el.getBoundingClientRect().top;
+
+  return (
+    elementTop <=
+    (window.innerHeight || document.documentElement.clientHeight) / dividend
+  );
+};
+
+const elementOutofView = (el) => {
+  const elementTop = el.getBoundingClientRect().top;
+
+  return (
+    elementTop > (window.innerHeight || document.documentElement.clientHeight)
+  );
+};
+
+const displayScrollElement = (element) => {
+  element.classList.add("scrolled");
+};
+
+const hideScrollElement = (element) => {
+  element.classList.remove("scrolled");
+};
+
+const handleScrollAnimation = () => {
+  scrollElements.forEach((el) => {
+    if (elementInView(el, 1.25)) {
+      displayScrollElement(el);
+    } else if (elementOutofView(el)) {
+      hideScrollElement(el)
+    }
+  })
+}
+
+window.addEventListener("scroll", () => {
+  handleScrollAnimation();
+});
+</script>
