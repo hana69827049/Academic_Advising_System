@@ -1,0 +1,313 @@
+<style>* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 1px;
+}
+.button {
+border: none;
+background-color: Transparent;
+cursor: pointer;
+
+}
+/*بداية الهيدر */
+.v194_23 {
+  width: 100%;
+  height: 670px;
+  background: linear-gradient(rgba(3,105,161,1), rgba(0,164,255,1));
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v194_24 {
+  width: 286px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 272px;
+  left: 187px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 170px;
+  opacity: 1;
+  text-align: left;
+}
+.v194_25 {
+  width: 223px;
+  color: rgba(249,250,251,1);
+  position: absolute;
+  top: 27px;
+  left: 54px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+  transition: .2s ;
+  }
+  .v194_25:hover{
+  width: 180px;
+  height: 40px;
+  color: rgba(3,105,161,1);
+  background: rgba(255,255,255,1);
+  border-top-left-radius: 125px;
+  border-top-right-radius: 125px;
+  border-bottom-left-radius: 125px;
+  border-bottom-right-radius: 125px;
+  }
+.v194_26 {
+  width: 223px;
+  color: rgba(249,250,251,1);
+  position: absolute;
+  top: 246px;
+  left: 500px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 36px;
+  opacity: 1;
+  text-align: left;
+}
+.v194_27 {
+  width: 340px;
+  color: rgba(249,250,251,1);
+  position: absolute;
+  top: 450px;
+  left: 25px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 30px;
+  opacity: 1;
+  text-align: left;}
+.v194_28 {
+  width: 200px;
+  color: rgba(249,250,251,1);
+  background-color: Transparent;
+  position: absolute;
+  top: 24px;
+  left: 670px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+  transition: .2s ;
+}
+.v194_28:hover{
+width: 160px;
+height: 40px;
+color: rgba(3,105,161,1);
+background: rgba(255,255,255,1);
+border-top-left-radius: 125px;
+border-top-right-radius: 125px;
+border-bottom-left-radius: 125px;
+border-bottom-right-radius: 125px;
+}
+.v194_29 {
+  width: 110px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 24px;
+  left: 839px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+transition: .2s ;
+}
+.v194_29:hover{
+width: 105px;
+height: 40px;
+color: rgba(3,105,161,1);
+background: rgba(255,255,255,1);
+border-top-left-radius: 125px;
+border-top-right-radius: 125px;
+border-bottom-left-radius: 125px;
+border-bottom-right-radius: 125px;
+}
+.v194_30 {
+  width: 290px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 24px;
+  left: 950px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+    transition: .2s ;
+}
+.v194_30:hover{
+  width: 280px;
+  height: 40px;
+  color: rgba(3,105,161,1);
+  background: rgba(255,255,255,1);
+  border-top-left-radius: 125px;
+  border-top-right-radius: 125px;
+  border-bottom-left-radius: 125px;
+  border-bottom-right-radius: 125px;
+}
+.v194_31 {
+  width: 201px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 24px;
+  left: 1250px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+  transition: .2s ;
+
+}
+.v194_31:hover{
+  width: 183px;
+  height: 40px;
+  color: rgba(3,105,161,1);
+  background: rgba(255,255,255,1);
+  border-top-left-radius: 125px;
+  border-top-right-radius: 125px;
+  border-bottom-left-radius: 125px;
+  border-bottom-right-radius: 125px;
+}
+.v194_32 {
+  width: 457px;
+  height: 82px;
+  background: rgba(249,250,251,1);
+  opacity: 1;
+  position: absolute;
+  top: 479px;
+  left: 945px;
+  border-top-left-radius: 125px;
+  border-top-right-radius: 125px;
+  border-bottom-left-radius: 125px;
+  border-bottom-right-radius: 125px;
+  overflow: hidden;
+    color: rgba(3,105,161,1);
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 32px;
+transition: .2s ;
+}
+.v194_32:hover{
+width: 456px;
+height: 82px;
+color: rgba(249,250,251,1);
+background: rgba(3,105,161,1);
+border-top-left-radius: 125px;
+border-top-right-radius: 125px;
+border-bottom-left-radius: 125px;
+border-bottom-right-radius: 125px;
+}
+
+
+.v194_33 {
+  width: 457px;
+  height: 82px;
+  background: rgba(249,250,251,1);
+  opacity: 1;
+  position: absolute;
+  top: 381px;
+  left: 945px;
+  border-top-left-radius: 125px;
+  border-top-right-radius: 125px;
+  border-bottom-left-radius: 125px;
+  border-bottom-right-radius: 125px;
+  overflow: hidden;
+color: rgba(3,105,161,1);
+font-family: Inter;
+font-weight: Regular;
+font-size: 32px;
+transition: .2s ;
+}
+.v194_33:hover{
+width: 456px;
+height: 82px;
+color: rgba(249,250,251,1);
+background: rgba(3,105,161,1);
+border-top-left-radius: 125px;
+border-top-right-radius: 125px;
+border-bottom-left-radius: 125px;
+border-bottom-right-radius: 125px;
+}
+
+.v194_34 {
+  width: 457px;
+  height: 82px;
+  background: rgba(249,250,251,1);
+  opacity: 1;
+  position: absolute;
+  top: 577px;
+  left: 945px;
+  border-top-left-radius: 125px;
+  border-top-right-radius: 125px;
+  border-bottom-left-radius: 125px;
+  border-bottom-right-radius: 125px;
+  overflow: hidden;
+  color: rgba(3,105,161,1);
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+
+  transition: .2s ;
+  }
+  .v194_34:hover{
+  width: 456px;
+  height: 82px;
+  color: rgba(249,250,251,1);
+  background: rgba(3,105,161,1);
+  border-top-left-radius: 125px;
+  border-top-right-radius: 125px;
+  border-bottom-left-radius: 125px;
+  border-bottom-right-radius: 125px;
+  }
+
+/*نهاية الهيدر*/
+
+
+/*بداية الفوتر*/
+.name {
+width: 600px;
+border-top: 2px solid rgba(3,105,161,1);
+}
+
+.v194_19 {
+  width: 100%;
+  height: 584px;
+  background: linear-gradient(rgba(3,105,161,1), rgba(0,164,255,1));
+  opacity: 1;
+  position: absolute;
+  top: 2416px;
+  left: 0px;
+  overflow: hidden;
+}
+.v194_20 {
+  width: 325px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 141px;
+  left: 217px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 170px;
+  opacity: 1;
+  text-align: left;
+}
+.v194_21 {
+  width: 410px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 317px;
+  left: 147px;
+  font-family: Judson;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+/*نهاية الفوتر */

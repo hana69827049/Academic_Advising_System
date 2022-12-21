@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html><head>
+  <link rel="stylesheet" href="footerandheaderstyle.css">
   <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
 </head>
 <body>
   <!-- بدايه الهيدر -->
+
   <div class="v194_23"> </div>
   <span class="v194_24">AAS</span>
   <button class="button v194_25 ">الملف الشخصي</button>
-  <span class="v194_26">مع نظام</span>
-  <span class="v194_27">لا دموع بعد اليوم</span>
+  <span class="v194_26">نظام</span>
+  <span class="v194_27">للإرشاد الأكاديمي بكلية الحاسب</span>
   <button class="button v194_28">الاسالة الشائعة</button>
   <button class="button v194_29">الانذارات</button>
-  <button class="button v194_30">اقتراحات
-  التدريب الصيفي</button>
+  <button class="button v194_30">اقتراحات لتدريب الصيفي</button>
   <button class="button v194_31">وصف المقررات</button>
-
   <button class="button v194_33">
-<span>ارسال ايميل </span>
+  <span>ارسال ايميل </span>
   </button>
   <button class="button v194_32"> <span>  حجز موعد </span></button>
   <button class="button v194_34"> <span>  دليلك للحاسب </span></button>
+
 <!--نهاية الهدير -->
 
 <section class="scroll-container">
@@ -27,6 +28,10 @@
 
 <div class="name"></div>
 </div>
+<section class="scroll-container">
+  <div class="scroll-element js-scroll fade-in-bottom">
+  <button class="chatbot"> <span> chatbot </span></button></div></section>
+
 </section>
 <section class="scroll-container">
   <div class="scroll-element js-scroll fade-in-bottom">
@@ -65,10 +70,10 @@ pdf  </span>
 
 <!--بداية الفوتر  -->
 <div class="v194_19">
+   <div class="name1"></div>
 <span class="v194_20">AAS</span>
 <span class="v194_21">نظام الإرشاد الأكاديمي الإلكتروني
  لكلية الحاسب بجامعة القصيم</span>
- <div class="name"></div>
 </div>
 <!--نهاية الفوتر -->
 </div>
@@ -87,6 +92,19 @@ body {
   border:none;
 
 }
+.chatbot{
+  background: linear-gradient(rgba(3,105,161,1), rgba(0,164,255,1));
+width: 125px;
+height: 125px;
+top:81%;
+right: 0%;
+border-radius: 50%;
+border: none;
+position: fixed;
+font-size: 25px;
+color: rgba(249,250,251,1);
+}
+
 .scroll-container {
   height: 5vh;
   min-height: 250px;
@@ -113,16 +131,11 @@ body {
 }
 
 
-.button {
-border: none;
-background-color: Transparent;
-cursor: pointer;
 
-}
 
 .v194_23 {
   width: 100%;
-  height: 712px;
+  height: 670px;
   background: linear-gradient(rgba(3,105,161,1), rgba(0,164,255,1));
   opacity: 1;
   position: relative;
@@ -154,16 +167,27 @@ cursor: pointer;
   font-size: 32px;
   opacity: 1;
   text-align: left;
-}
+  transition: .2s ;
+  }
+  .v194_25:hover{
+  width: 180px;
+  height: 40px;
+  color: rgba(3,105,161,1);
+  background: rgba(255,255,255,1);
+  border-top-left-radius: 125px;
+  border-top-right-radius: 125px;
+  border-bottom-left-radius: 125px;
+  border-bottom-right-radius: 125px;
+  }
 .v194_26 {
   width: 223px;
   color: rgba(249,250,251,1);
   position: absolute;
   top: 246px;
-  left: 406px;
+  left: 500px;
   font-family: Inter;
   font-weight: Regular;
-  font-size: 48px;
+  font-size: 36px;
   opacity: 1;
   text-align: left;
 }
@@ -171,73 +195,106 @@ cursor: pointer;
   width: 340px;
   color: rgba(249,250,251,1);
   position: absolute;
-  top: 442px;
-  left: 69px;
+  top: 450px;
+  left: 25px;
   font-family: Inter;
   font-weight: Regular;
-  font-size: 48px;
+  font-size: 30px;
   opacity: 1;
-  text-align: left;
-}
+  text-align: left;}
 .v194_28 {
   width: 200px;
   color: rgba(249,250,251,1);
   background-color: Transparent;
   position: absolute;
-  top: 40px;
-  left: 576px;
+  top: 24px;
+  left: 670px;
   font-family: Inter;
   font-weight: Regular;
   font-size: 32px;
   opacity: 1;
   text-align: left;
+  transition: .2s ;
+}
+.v194_28:hover{
+width: 160px;
+height: 40px;
+color: rgba(3,105,161,1);
+background: rgba(255,255,255,1);
+border-top-left-radius: 125px;
+border-top-right-radius: 125px;
+border-bottom-left-radius: 125px;
+border-bottom-right-radius: 125px;
 }
 .v194_29 {
   width: 110px;
   color: rgba(255,255,255,1);
   position: absolute;
-  top: 32px;
-  left: 812px;
+  top: 24px;
+  left: 839px;
   font-family: Inter;
   font-weight: Regular;
   font-size: 32px;
   opacity: 1;
   text-align: center;
+transition: .2s ;
+}
+.v194_29:hover{
+width: 105px;
+height: 40px;
+color: rgba(3,105,161,1);
+background: rgba(255,255,255,1);
+border-top-left-radius: 125px;
+border-top-right-radius: 125px;
+border-bottom-left-radius: 125px;
+border-bottom-right-radius: 125px;
 }
 .v194_30 {
-  width: 217px;
+  width: 290px;
   color: rgba(255,255,255,1);
   position: absolute;
-  top: 15px;
-  left: 960px;
+  top: 24px;
+  left: 950px;
   font-family: Inter;
   font-weight: Regular;
   font-size: 32px;
   opacity: 1;
   text-align: center;
+    transition: .2s ;
+}
+.v194_30:hover{
+  width: 280px;
+  height: 40px;
+  color: rgba(3,105,161,1);
+  background: rgba(255,255,255,1);
+  border-top-left-radius: 125px;
+  border-top-right-radius: 125px;
+  border-bottom-left-radius: 125px;
+  border-bottom-right-radius: 125px;
 }
 .v194_31 {
   width: 201px;
   color: rgba(255,255,255,1);
   position: absolute;
   top: 24px;
-  left: 1188px;
+  left: 1250px;
   font-family: Inter;
   font-weight: Regular;
   font-size: 32px;
   opacity: 1;
   text-align: left;
+  transition: .2s ;
+
 }
 .v194_31:hover{
   width: 183px;
   height: 40px;
+  color: rgba(3,105,161,1);
   background: rgba(255,255,255,1);
-  background-image:  no-repeat;
   border-top-left-radius: 125px;
   border-top-right-radius: 125px;
   border-bottom-left-radius: 125px;
   border-bottom-right-radius: 125px;
-  transition:  .5s;
 }
 .v194_32 {
   width: 457px;
@@ -256,26 +313,17 @@ cursor: pointer;
     font-family: Inter;
     font-weight: Regular;
     font-size: 32px;
+transition: .2s ;
 }
-
-
-.v194_33 {
-  width: 457px;
-  height: 82px;
-  background: rgba(249,250,251,1);
-  opacity: 1;
-  position: absolute;
-  top: 381px;
-  left: 945px;
-  border-top-left-radius: 125px;
-  border-top-right-radius: 125px;
-  border-bottom-left-radius: 125px;
-  border-bottom-right-radius: 125px;
-  overflow: hidden;
-color: rgba(3,105,161,1);
-font-family: Inter;
-font-weight: Regular;
-font-size: 32px;
+.v194_32:hover{
+width: 456px;
+height: 82px;
+color: rgba(249,250,251,1);
+background: rgba(3,105,161,1);
+border-top-left-radius: 125px;
+border-top-right-radius: 125px;
+border-bottom-left-radius: 125px;
+border-bottom-right-radius: 125px;
 }
 
 
@@ -297,7 +345,18 @@ font-size: 32px;
   font-weight: Regular;
   font-size: 32px;
 
-}
+  transition: .2s ;
+  }
+  .v194_34:hover{
+  width: 456px;
+  height: 82px;
+  color: rgba(249,250,251,1);
+  background: rgba(3,105,161,1);
+  border-top-left-radius: 125px;
+  border-top-right-radius: 125px;
+  border-bottom-left-radius: 125px;
+  border-bottom-right-radius: 125px;
+  }
 
 
 
@@ -476,46 +535,6 @@ font-size: 32px;
   overflow: hidden;
 }
 
-.name {
-width: 600px;
-border-top: 2px solid rgba(3,105,161,1);
-}
-
-.v194_19 {
-  width: 100%;
-  height: 584px;
-  background: linear-gradient(rgba(3,105,161,1), rgba(0,164,255,1));
-  opacity: 1;
-  position: absolute;
-  top: 2416px;
-  left: 0px;
-  overflow: hidden;
-}
-.v194_20 {
-  width: 325px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 141px;
-  left: 217px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: Judson;
-  font-weight: Regular;
-  font-size: 170px;
-  opacity: 1;
-  text-align: left;
-}
-.v194_21 {
-  width: 410px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 317px;
-  left: 147px;
-  font-family: Judson;
-  font-weight: Regular;
-  font-size: 32px;
-  opacity: 1;
-  text-align: left;
-}
 
 </style>
 <script>
@@ -548,7 +567,7 @@ const hideScrollElement = (element) => {
 
 const handleScrollAnimation = () => {
   scrollElements.forEach((el) => {
-    if (elementInView(el, 1.25)) {
+    if (elementInView(el, 1.5)) {
       displayScrollElement(el);
     } else if (elementOutofView(el)) {
       hideScrollElement(el)
