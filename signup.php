@@ -1,3 +1,4 @@
+<?php include('server.php')?>
 <!DOCTYPE html>
 <html lang="ar,eng">
   <head>
@@ -13,12 +14,11 @@
 
     <section class="container">
       <header>التسجيل للنظام</header>
-      <form action="#" class="form">
         <div class="input-box">
-          <form action="signup.php" method="post" enctype="multipart/form-data">
-
+          <form action="signup.php" method="post" >
+<div class="input-box">
           <label>الإسم</label>
-          <input type="text" name="sname" required />
+          <input type="text" name="sname" required  />
         </div>
 
         <div class="input-box">
@@ -28,7 +28,7 @@
 
         <div class="input-box">
           <label>الإيميل</label>
-          <input type="text" name="semail" required />
+          <input type="text" name="semail" required  />
         </div>
 
         <div class="input-box">
@@ -38,12 +38,13 @@
 
         <div class="input-box">
           <label>المعدل التراكمي</label>
-          <input type="number" name="sgpa" required />
+          <input type="text" name="sgpa" required />
         </div>
+
 
         <div class="column">
           <div class="select-box">
-            <select name="slevel" >
+            <select name="slevel" value =" <?php echo "slevel"; ?> " type="text" >
               <option hidden>المستوى الدراسي</option>
               <option value="lev4">Level 4</option>
               <option value="lev5">Level 5</option>
@@ -58,9 +59,7 @@
               <option value="lev14">Level 14</option>
               <option value="lev15">Level 15</option>
             </select>
-          </div>
-
-
+          </div>/
 
           <button type="submit" name="signup" value="signup">تسجيل</button>
       </form>
@@ -187,4 +186,3 @@
 
   }
   </style>
-
