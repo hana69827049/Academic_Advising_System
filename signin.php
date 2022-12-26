@@ -1,11 +1,15 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
+
 <html lang="ar,eng">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>تسجيل الدخول</title>
-    <link rel="stylesheet" href="signin.css" />
+
   </head>
   <body>
     <span class="logo">AAS</span>
@@ -16,12 +20,12 @@
       <form action="#" class="form">
         <div class="input-box">
           <label>الرقم الجامعي</label>
-          <input type="text" required />
+          <input type="text" name="snum" required />
         </div>
 
         <div class="input-box">
           <label>كلمة المرور</label>
-          <input type="password" required />
+          <input type="password" name="spass" required />
         </div>
 
 
