@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="ar,eng">
   <head>
     <meta charset="UTF-8" />
@@ -16,6 +15,8 @@
       <header>التسجيل للنظام</header>
       <form action="#" class="form">
         <div class="input-box">
+          <form action="signup.php" method="post" enctype="multipart/form-data">
+
           <label>الإسم</label>
           <input type="text" name="sname" required />
         </div>
@@ -61,7 +62,7 @@
 
 
 
-          <button type="submit" value="signp">تسجيل</button>
+          <button type="submit" name="signup" value="signup">تسجيل</button>
       </form>
     </section>
   </body>
@@ -186,3 +187,4 @@
 
   }
   </style>
+
