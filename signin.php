@@ -1,6 +1,4 @@
-<?php
-    session_start();
-?>
+<?php include('server.php') ?>
 <!DOCTYPE html>
 
 <html lang="ar,eng">
@@ -15,22 +13,29 @@
     <span class="logo">AAS</span>
 <span class="des">نظام الإرشاد الأكاديمي الإلكتروني لكلية الحاسب بجامعة القصيم</span></div></body></html>
 
+
     <section class="container">
+      <form method="post" action="signin.php">
+      <?php include('errors.php'); ?>
+
       <header>تسجيل الدخول</header>
-      <form action="#" class="form">
+
         <div class="input-box">
           <label>الرقم الجامعي</label>
-          <input type="text" name="snum" required />
+          <input type="text" name="snum" required value="<?php echo $snum; ?>"/>
         </div>
 
         <div class="input-box">
           <label>كلمة المرور</label>
-          <input type="password" name="spass" required />
+          <input type="password" name="spass" required value="<?php echo $spass; ?>" />
         </div>
 
 
 
-        <button type="submit" value="signin">تسجيل الدخول</button>
+        <button type="submit" value="signin" name="signin">تسجيل الدخول</button>
+        <p>
+         Not have acount?<a href="signup.php">Sign_Up</a>
+   </p>
       </form>
     </section>
   </body>

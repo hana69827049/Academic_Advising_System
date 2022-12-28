@@ -38,7 +38,7 @@
 
         <div class="input-box">
           <label>المعدل التراكمي</label>
-          <input type="text" name="sgpa" required />
+          <input type="number" step=0.01 name="sgpa" required />
         </div>
 
 

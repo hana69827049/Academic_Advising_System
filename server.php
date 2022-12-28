@@ -34,7 +34,7 @@
 
             if (count($errors) == 0){
 
-
+$spass=md5($spass);
 $query="insert into students(sname,snum,semail,spass,sgpa,slevel)Values('$sname','$snum','$semail','$spass','$sgpa','$slevel')";
 mysqli_query($db,$query);
 
@@ -44,4 +44,36 @@ header('location: Home.html');
 }
 
 		}
+
+
+// LOGIN USER
+	if (isset($_POST['signin'])) {
+    $snum = mysqli_real_escape_string($db, $_POST['snum']);
+		$spass = mysqli_real_escape_string($db, $_POST['spass']);
+
+    if (empty($snum)) {
+			array_push($errors, "Username is required");
+		}
+		if (empty($spass)) {
+			array_push($errors, "Password is required");
+		}
+
+
+		if (count($errors) == 0) {
+      $spass=md5($spass);
+			$query = "SELECT * FROM students WHERE snum='$snum' AND spass='$spass'";
+			$results = mysqli_query($db, $query);
+
+			if (mysqli_num_rows($results) == 1) {
+				$_SESSION['snum'] = $snum;
+				$_SESSION['success'] = "Login is succesed  ";
+				header('location: Home.html');
+			}
+
+      else {
+				array_push($errors, " Error in username or password");
+			}
+		}
+	}
+
   ?>
