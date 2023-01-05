@@ -16,29 +16,31 @@
       <header>التسجيل للنظام</header>
         <div class="input-box">
           <form action="signup.php" method="post" >
+            <?php include('errors.php'); ?>
+
 <div class="input-box">
           <label>الإسم</label>
-          <input type="text" name="sname" required  />
+          <input type="text" name="sname" required value="<?php echo $sname; ?>" >
         </div>
 
         <div class="input-box">
           <label>الرقم الجامعي</label>
-          <input type="text" name="snum" required />
+          <input type="text" name="snum" required value="<?php echo $snum; ?>">
         </div>
 
         <div class="input-box">
           <label>الإيميل</label>
-          <input type="text" name="semail" required  />
+          <input type="text" name="semail" required value="<?php echo $semail; ?>">
         </div>
 
         <div class="input-box">
           <label>كلمة المرور</label>
-          <input type="password" name="spass"  required />
+          <input type="password" name="spass"  required value="<?php echo $spass; ?>">
         </div>
 
         <div class="input-box">
           <label>المعدل التراكمي</label>
-          <input type="number" step=0.01 name="sgpa" required />
+          <input type="number" step=0.01 name="sgpa" required value="<?php echo $sgpa; ?>">
         </div>
 
 
@@ -59,8 +61,7 @@
               <option value="lev14">Level 14</option>
               <option value="lev15">Level 15</option>
             </select>
-          </div>/
-
+          </div>
           <button type="submit" name="signup" value="signup">تسجيل</button>
       </form>
     </section>

@@ -1,4 +1,4 @@
-<?php include('server.php') ?>
+<?php include('server.php')?>
 <!DOCTYPE html>
 
 <html lang="ar,eng">
@@ -16,18 +16,18 @@
 
     <section class="container">
       <form method="post" action="signin.php">
-      <?php include('errors.php'); ?>
+         <?php include('errors.php'); ?>
 
       <header>تسجيل الدخول</header>
 
         <div class="input-box">
           <label>الرقم الجامعي</label>
-          <input type="text" name="snum" required value="<?php echo $snum; ?>"/>
+          <input type="text" name="snum"  value="<?php echo $snum; ?>">
         </div>
 
         <div class="input-box">
           <label>كلمة المرور</label>
-          <input type="password" name="spass" required value="<?php echo $spass; ?>" />
+          <input type="password" name="spass"  value="<?php echo $spass; ?>">
         </div>
 
 

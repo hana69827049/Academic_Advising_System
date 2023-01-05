@@ -38,9 +38,9 @@ $spass=md5($spass);
 $query="insert into students(sname,snum,semail,spass,sgpa,slevel)Values('$sname','$snum','$semail','$spass','$sgpa','$slevel')";
 mysqli_query($db,$query);
 
-$_SESSION['sname'] = $sname;
+$_SESSION['snum'] = $snum;
 $_SESSION['success'] = "Register Successfull";
-header('location: Home.html');
+header('location: Home0.php');
 }
 
 		}
@@ -58,19 +58,16 @@ header('location: Home.html');
 			array_push($errors, "Password is required");
 		}
 
-
 		if (count($errors) == 0) {
-      $spass=md5($spass);
+      $spass = md5($spass);
 			$query = "SELECT * FROM students WHERE snum='$snum' AND spass='$spass'";
 			$results = mysqli_query($db, $query);
 
 			if (mysqli_num_rows($results) == 1) {
-				$_SESSION['snum'] = $snum;
-				$_SESSION['success'] = "Login is succesed  ";
-				header('location: Home.html');
-			}
-
-      else {
+        $_SESSION['snum'] = $snum;
+        $_SESSION['success'] = "Register Successfull";
+        header('location: Home0.php');
+			}else {
 				array_push($errors, " Error in username or password");
 			}
 		}
