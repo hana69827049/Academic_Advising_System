@@ -22,12 +22,12 @@
 
         <div class="input-box">
           <label>الرقم الجامعي</label>
-          <input type="text" name="snum"  value="<?php echo $snum; ?>">
+          <input type="text" name="snum"  >
         </div>
 
         <div class="input-box">
           <label>كلمة المرور</label>
-          <input type="password" name="spass"  value="<?php echo $spass; ?>">
+          <input type="password" name="spass"  >
         </div>
 
 

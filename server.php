@@ -1,6 +1,7 @@
 <?php
     	session_start();
 	// variable declaration
+  //std
     $sname="";
   	$snum= "";
     $semail="";
@@ -8,12 +9,18 @@
   $sgpa="";
     $slevel="";
 
+//sdvisor
+ $aname="";
+ $anum; "";
+$aemail="";
+$apassword_1="";
+
     $errors = array();
   	$_SESSION['success'] = "";
 
     $db=mysqli_connect('localhost','root','','aas');
 
-
+//signup for std
 
     if (isset($_POST['signup'])) {
 
@@ -38,7 +45,7 @@ $spass=md5($spass);
 $query="insert into students(sname,snum,semail,spass,sgpa,slevel)Values('$sname','$snum','$semail','$spass','$sgpa','$slevel')";
 mysqli_query($db,$query);
 
-$_SESSION['snum'] = $snum;
+$_SESSION['sname'] = $sname;
 $_SESSION['success'] = "Register Successfull";
 header('location: Home0.php');
 }
@@ -46,7 +53,7 @@ header('location: Home0.php');
 		}
 
 
-// LOGIN USER
+// LOGIN std
 	if (isset($_POST['signin'])) {
     $snum = mysqli_real_escape_string($db, $_POST['snum']);
 		$spass = mysqli_real_escape_string($db, $_POST['spass']);
@@ -64,7 +71,7 @@ header('location: Home0.php');
 			$results = mysqli_query($db, $query);
 
 			if (mysqli_num_rows($results) == 1) {
-        $_SESSION['snum'] = $snum;
+        $_SESSION['sname'] = $sname;
         $_SESSION['success'] = "Register Successfull";
         header('location: Home0.php');
 			}else {
@@ -73,4 +80,78 @@ header('location: Home0.php');
 		}
 	}
 
+
+
+  //signup for advisor
+
+      if (isset($_POST['asignup'])) {
+
+  // receive all input values from the form
+     $aname = mysqli_real_escape_string($db, $_POST['aname']);
+  	 $anum = mysqli_real_escape_string($db, $_POST['anum']);
+  		$aemail = mysqli_real_escape_string($db, $_POST['aemail']);
+  		$apassword_1 = mysqli_real_escape_string($db, $_POST['apassword_1']);
+  		$apassword_2 = mysqli_real_escape_string($db, $_POST['apassword_2']);
+          //check empty stack
+          if(empty($aname)){ array_push($errors, "الأسم مطلوب");}
+           if(empty($anum)){ array_push($errors, "رقم الموظف مطلوب");}
+            if(empty($aemail)){ array_push($errors, "الايميل مطلوب");}
+             if(empty($apassword_1)){ array_push($errors, " كلمة المرور مطلوبة");}
+             if ($apassword_1 != $apassword_2) {
+           array_push($errors, "كلمات المرور غير مترابطة");}
+
+           $user_check_query = "SELECT * FROM advisor WHERE anum='$anum' OR aemail='$aemail' LIMIT 1";
+  $result = mysqli_query($db, $user_check_query);
+  $user = mysqli_fetch_assoc($result);
+
+  if ($user) { // if user exists
+      if ($user['anum'] === $anum) {
+        array_push($errors, "رقم الموظف مستخدم سابقا");
+      }
+
+      if ($user['aemail'] === $aemail) {
+        array_push($errors, "الايميل مستخد سابقا");
+      }
+    }
+
+              if (count($errors) == 0){
+
+$apassword_1=md5($apassword_1);
+  $query="insert into advisor(aname,anum,aemail,apassword_1)Values
+  ('$aname','$anum','$aemail','$apassword_1')";
+  mysqli_query($db,$query);
+
+  $_SESSION['aname'] = $aname;
+  $_SESSION['success'] = "Register Successfull";
+  header('location: Home0.php');
+  }
+
+  		}
+
+      // LOGIN advisor
+      	if (isset($_POST['login'])) {
+      		$anum = mysqli_real_escape_string($db, $_POST['anum']);
+      		$apassword_1 = mysqli_real_escape_string($db, $_POST['apassword_1']);
+
+      		if (empty($anum)) {
+      			array_push($errors, "Username is required");
+      		}
+      		if (empty($apassword_1)) {
+      			array_push($errors, "Password is required");
+      		}
+
+      		if (count($errors) == 0) {
+      			$apassword_1 = md5($apassword_1);
+      			$query = "SELECT * FROM advisor WHERE anum='$anum' AND apassword_1='$apassword_1'";
+      			$results = mysqli_query($db, $query);
+
+      			if (mysqli_num_rows($results) == 1) {
+      				$_SESSION['aname'] = $aname;
+      				$_SESSION['success'] = "Login is succesed  ";
+      				header('location: Home0.php');
+      			}else {
+      				array_push($errors, " Error in username or password");
+      			}
+      		}
+      	}
   ?>
