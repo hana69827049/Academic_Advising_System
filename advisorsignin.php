@@ -10,7 +10,7 @@
 
 
     <span class="v3_19">تسجيل الدخول </span>
-    
+
     <p>
        <a class="v5_25" href="advisorsginup.php"> ليس لديك حساب ؟ </a>
       	</p>
@@ -61,6 +61,21 @@ body {
   top: 572px;
 left: 898px;
 }
+.error {
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #a94442;
+  color: #a94442;
+  background: #f2dede;
+  border-radius: 5px;
+  text-align: left;
+  width: 471px;
+  height: px;
+  position: absolute;
+  top: 70px;
+  left: 870px;
+}
+
 .v2_2 {
   width: 100%;
   height: 1024px;
