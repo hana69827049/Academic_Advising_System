@@ -38,6 +38,11 @@ $apassword_1="";
           if(empty($semail)){ array_push($errors, "semail is required");}
            if(empty($spass_1)){ array_push($errors, "Passwoed is required");}
            if(empty($sgpa)){ array_push($errors, "GPA is required");}
+           if ($sgpa<=2){
+             header('Location: Home1.html');
+           }else {
+               header('location: Home0.php');
+           }
             if(empty($slevel)){ array_push($errors, "level is required");}
             if ($spass_1 != $spass_2) {
            array_push($errors, "كلمات المرور غير مترابطة");}
@@ -93,7 +98,11 @@ header('location: Home0.php');
 			if (mysqli_num_rows($results) == 1) {
         $_SESSION['sname'] = $sname;
         $_SESSION['success'] = "Login is succesed";
-        header('location: Home0.php');
+        if ($sgpa<=2){
+          header('Location: Home1.html');
+        }else {
+            header('location: Home0.php');
+        }
 			}else {
 				array_push($errors, "خطاء في كلمة المرور او رقم الطاب");
 			}
