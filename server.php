@@ -69,7 +69,7 @@ $query="insert into students_1 (sname,snum,semail,spass_1,sgpa,slevel)Values
 ('$sname','$snum','$semail','$spass_1','$sgpa','$slevel')";
 mysqli_query($db,$query);
 
-$_SESSION['sname'] = $sname;
+$_SESSION['snum'] = $snum;
 $_SESSION['success'] = "Register Successfull";
 header('location: Home0.php');
 }
@@ -96,7 +96,7 @@ header('location: Home0.php');
 			$results = mysqli_query($db, $query);
 
 			if (mysqli_num_rows($results) == 1) {
-        $_SESSION['sname'] = $sname;
+        $_SESSION['snum'] = $snum;
         $_SESSION['success'] = "Login is succesed";
         if ($sgpa<=2){
           header('Location: Home1.html');
@@ -182,4 +182,11 @@ $apassword_1=md5($apassword_1);
       			}
       		}
       	}
+
+        {
+
+
+
+
+        }
   ?>
