@@ -46,8 +46,8 @@
     <input class="input gpa" type="number" step=0.01 name="sgpa"  value="<?php #echo $sgpa; ?>">
 
     <span class="lvltext">المستوى الدراسي</span>
-    <div class="input lvl">
-      <select name="slevel" value =" <?php# echo "slevel"; ?> " type="text" 
+    <div >
+      <select class="input lvl" name="slevel" value =" <?php# echo "slevel"; ?> " type="text" 
 style="
     top: 920px;
     left: 898px;
@@ -56,10 +56,7 @@ style="
     color: rgba(118,118,118,1);
     font-family: Inter;
     font-weight: Regular;
-    font-size: 24px;
-"
-
-        >
+    font-size: 24px;">
         <option hidden>المستوى الدراسي</option>
         <option value="lev4">Level 4</option>
         <option value="lev5">Level 5</option>
