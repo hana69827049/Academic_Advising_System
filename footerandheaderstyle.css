@@ -198,6 +198,8 @@ border-bottom-right-radius: 125px;
     font-weight: Regular;
     font-size: 32px;
 transition: .2s ;
+text-align: center;
+
 }
 .v194_32:hover{
 width: 456px;
@@ -257,10 +259,11 @@ border-bottom-right-radius: 125px;
   color: rgba(3,105,161,1);
   font-family: Inter;
   font-weight: Regular;
-  font-size: 32px;
+  text-align: center;
 
   transition: .2s ;
   }
+
   .v194_34:hover{
   width: 456px;
   height: 82px;
