@@ -1,14 +1,14 @@
 <style>* {
   box-sizing: border-box;
+
 }
 body {
   font-size: 1px;
 }
 .button {
 border: none;
-background-color: Transparent;
 cursor: pointer;
-
+text-decoration:none;
 }
 /*بداية الهيدر */
 .v194_23 {
@@ -46,6 +46,7 @@ cursor: pointer;
   opacity: 1;
   text-align: left;
   transition: .2s ;
+
   }
   .v194_25:hover{
   width: 180px;
@@ -82,17 +83,22 @@ cursor: pointer;
   text-align: left;}
 .v194_28 {
   width: 200px;
-  color: rgba(249,250,251,1);
+
   background-color: Transparent;
   position: absolute;
   top: 24px;
   left: 670px;
+text-decoration:none;
+  transition: .2s ;
+}
+.faq{
+color: rgba(249,250,251,1);
   font-family: Inter;
   font-weight: Regular;
   font-size: 32px;
   opacity: 1;
   text-align: left;
-  transition: .2s ;
+  text-decoration:none;
 }
 .v194_28:hover{
 width: 160px;

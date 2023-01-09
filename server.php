@@ -151,7 +151,7 @@ $apassword_1=md5($apassword_1);
 
   $_SESSION['aname'] = $aname;
   $_SESSION['success'] = "Register Successfull";
-  header('location: Home0.html');
+  header('location:/www/doctor.php');
   }
 
   		}
@@ -176,7 +176,7 @@ $apassword_1=md5($apassword_1);
       			if (mysqli_num_rows($results) == 1) {
       				$_SESSION['aname'] = $aname;
       				$_SESSION['success'] = "Login is succesed  ";
-      				header('location: Home0.html');
+      				header('location: /www/doctor.php');
       			}else {
       				array_push($errors, "خطاء في كلمة المرور او رقم الموظف");
       			}

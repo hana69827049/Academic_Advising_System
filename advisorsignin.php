@@ -146,7 +146,7 @@ font-size: 24px;
   font-weight: Regular;
   font-size: 32px;
   opacity: 1;
-  text-align: left;
+  text-align: center;
 }
 .v5_25 {
   width: 188px;
@@ -203,7 +203,7 @@ left: 1200px;
   color: rgba(255,255,255,1);
   position: absolute;
   top: 488px;
-  left: 46px;
+  left: 125px;
   font-family: Judson;
   font-weight: Regular;
   font-size: 32px;

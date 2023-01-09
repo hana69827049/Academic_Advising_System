@@ -9,7 +9,6 @@
 
   </div>
 <div  class="group">
-  <span class="v383_20">تسجيل الدخول </span>
   <span class="v383_21">تسجيل الدخول </span>
 
   <p>
@@ -242,7 +241,7 @@ font-size: 24px;
   font-weight: Regular;
   font-size: 32px;
   opacity: 1;
-  text-align: left;
+  text-align: center;
 }
 .v383_23 {
   width: 199px;
@@ -286,7 +285,7 @@ font-size: 24px;
   color: rgba(255,255,255,1);
   position: absolute;
   top: 488px;
-  left: 46px;
+  left: 125px;
   font-family: Judson;
   font-weight: Regular;
   font-size: 32px;
